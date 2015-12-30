@@ -31,4 +31,5 @@ libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.38"
 
 libraryDependencies += "junit" % "junit" % "4.12" % Test
 
+libraryDependencies += "io.spray" %%  "spray-json" % "1.3.2"
 
