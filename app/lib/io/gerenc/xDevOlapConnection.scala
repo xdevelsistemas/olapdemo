@@ -17,7 +17,7 @@ object xDevOlapConnection{
 
 
   //todo read from mongodb
-  val conn: OlapConnection = open("/Users/clayton/xdevelsistemas/java/olapdemo/conf/META-INF/foodmart/FoodMart.xml")
+  val conn: OlapConnection = open("conf/META-INF/foodmart/FoodMart.xml")
 
 
   /*
@@ -52,9 +52,9 @@ object xDevOlapConnection{
       //TODO persist with mongo and store this values
 
       // read from mongodb property
-      val jdbcConn = "Jdbc=jdbc:mysql://localhost:3306/foodmart"
+      val jdbcConn = "Jdbc=jdbc:mysql://localhost:32768/foodmart"
       // read from mongodb property
-      val credentials =  "JdbcUser=root;JdbcPassword=root"
+      val credentials =  "JdbcUser=root;JdbcPassword=123"
       // read from mongodb property
       val catalogContent = "CatalogContent=\"" +
         convertFromFile(path) + "\";"
